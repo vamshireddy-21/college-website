@@ -1,0 +1,196 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+nav{
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
+
+nav .mainmenu {
+    display: flex;
+    list-style: none;
+}
+
+nav .mainmenu li a{
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    color:rgb(69, 70, 67);
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+nav .mainmenu li a:hover{
+    background: rgb(248, 248, 5);
+    color: rgb(9, 9, 9);
+}
+
+nav .openmenu{
+    font-size: 2rem ;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .mainmenu .closemenu , .icons i{
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+.fa-facebook:hover{color:rgb(97, 97, 249)}
+.fa-instagram:hover{color:rgb(211, 77, 202)}
+.fa-twitter:hover{color:rgb(54, 54, 171)}
+
+
+@media(max-width: 900px){
+    nav .mainmenu {
+        height: 35vh;
+        position: fixed;
+        top :0;
+        right: 0;
+        left: 0;
+        z-index:  10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        transition: top 1s ease;
+        display: none;
+    }
+
+    nav .mainmenu .closemenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav .openmenu{
+        display: block ;
+    }
+
+    nav .mainmenu li a:hover{
+        background: none;
+        color: blue;
+        font-size: 1.6rem;
+    }
+}
+
+.image {
+    width: 100%;
+    height: 80vh;
+}
+
+.head {
+    background: rgb(16, 16, 97);
+    color: #fff;
+    font-size: 30px;
+}
+
+
+.links{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content : space-evenly;
+    background: rgb(194, 194, 236);
+    align-items: center;
+    list-style-type: none;
+    font-size: 20px;
+    color: rgb(100, 100, 242);
+}
+
+.apply {
+    min-height: 40vh;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    gap: 20px;
+    font-size: 18px;
+    font-family: 'Noto Sans', sans-serif ;
+    font-weight: 400;
+}
+
+.button {
+    width: 13rem;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(58, 17, 181);
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+    transition: all 0.5s ease 0s;
+}
+
+.button:hover {
+    background-color: white;
+    color: blue;
+  }
+
+  .prog {
+    min-height: 40vh;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    gap: 20px;
+    font-size: 18px;
+    font-family: 'Noto Sans', sans-serif ;
+    font-weight: 400;
+    background:rgb(236, 236, 247);
+  }
+
+  .prog:nth-child(even){
+    background: #fff;
+  }
+
+  .applybutton {
+    width: 10rem;
+    height: 4rem;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(58, 17, 181);
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 8px;
+    transition: all 0.5s ease 0s;
+  }
+
+  .myBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(58, 17, 181);
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+    transition: all 0.5s ease 0s;
+  }
+  
+  .myBtn:hover {
+    background-color: white;
+    color: blue;
+  }

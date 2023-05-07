@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100vh;
+    background: url(about_overview-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+ .box {
+    width: 93vh;
+    height: 62vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    background: whitesmoke;
+ }
+
+ .submit{
+    width: 30vh;
+    height: 2rem;
+    background-color: rgb(51, 51, 188);
+    border-radius: 12px;
+    color: white;
+ }
+
+ a {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+ }
+
+ input {
+   background-color: rgb(44, 41, 41);
+   color: white;
+   border-radius: 5px;
+   height: 1.5rem;
+ }
+
+ #togglePassword {
+   margin-left: -30px; 
+   cursor: pointer;
+   color: white;
+ }
+
+ #name {
+   margin-right: -10px;
+ }
+
+
+ 
